@@ -1,0 +1,11 @@
+{
+  "name": "ebookseller",
+  "version": "1.0.0",
+  "description": "a site to purchase ebooks using stripe",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jacob Spade",
+  "license": "ISC"
+}
