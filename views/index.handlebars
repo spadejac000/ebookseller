@@ -7,6 +7,24 @@
       <p class="lead">
         learn web development front to back
       </p>
+      <form action="/charge" method="POST">
+        <script
+          src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="pk_test_SDgPMwlzPSK2Fo1LNTcCKhYr00pduFRDkx"
+          data-amount="2500"
+          data-name="Web Development Ebook"
+          data-description="Ebook written by Jacob Spade"
+          data-image="/img/pepsi.png"
+          data-locale="auto">
+        </script>
+        <script>
+          // hide default stripe button
+          document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+        </script>
+        <button type="submit" class="btn btn-outline-dark text-white btn">
+          Purchase For $25
+        </button>
+      </form>
     </div>
     <div class="col-md-6">
       <img src="/img/book-cover-design-basic.png" alt="" class="img-fluid mt-3 pt-5">
